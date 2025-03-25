@@ -1,18 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="demo.css" />
+    <script src="./index.js" defer></script>
     <title>Weather App</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <div class="container">
-        <h1>Weather App</h1>
-        <input type="text" id="cityInput" placeholder="Enter city name">
-        <button onclick="getWeather()">Get Weather</button>
-        <div id="WeatherResult"></div>
-    </div>
-    <script src="index.js"></script>
-</body>
+  </head>
+  <body>
+    <section class="navigation">
+      <!-- Navigation -->
+      <nav>
+        <h2 class="logo-name">
+            <img src="assets/weather-icon-set-vector.jpg" alt="WeatherApp Logo" class="logo" />
+            WeatherApp
+        </h2>
+        <ul>
+          <li><a href="#"> Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#feedback">Comment Here</a></li>
+        </ul>
+        <input
+          type="text"
+          autocomplete="off"
+          class="search-box"
+          id="searchCityOne"
+          placeholder="Search for a city"
+        />
+      </nav>
+    </section>
+
+      
+    <section class="weather-container">
+      <!-- weather app -->
+
+      <div class="weather-wrap">
+        <header>
+          <input
+            type="text"
+            autocomplete="off"
+            class="search-box"
+            id="searchCityTwo"
+            placeholder="Search for a city"
+          />
+        </header>
+
+        <main>
+          <section class="location">
+            <div class="city" id="city">Nairobi, KE</div>
+            <div class="date" id="date">Date</div>
+          </section>
+
+          <div class="current">
+            <div class="temp" id="temp">10 °C</div>
+            <div class="weather" id="description">Sunny</div>
+            <div class="hi-low" id="minMax">0°C / 35°C</div>
+          <div class="humidity" id="humidity">Humidity:50%</div> 
+          <div class="wind" id="windSpeed">windSpeed: 10 km/h</div> 
+          </div>     
+        </main>
+      </div>
+    </section>
+    <section>
+      <div id="feedback" class="feedback-container">
+        <h2>Comment Here</h2>
+        <form action="feedback" class="feedback">
+          <input type="button" class="rate-btn rate-one" value="Excellent" />
+          <input type="button" class="rate-btn rate-two" value="satisfactory" />
+          <input type="button" class="rate-btn rate-three" value="Good" />
+          <input type="button" class="rate-btn rate-four" value="Needs improvement " />
+          <input type="button" class="rate-btn rate-five" value="poor" />
+        </form>
+      </div>
+    </section>
+  </body>
 </html>
