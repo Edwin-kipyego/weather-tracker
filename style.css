@@ -1,40 +1,287 @@
-
 body {
-    font-family: Arial, sans-serif;
-    text-align: center;
-    margin: 0;
-    padding: 20px;
-    background-color: #f4f4f4;
-}
-
-.container {
-    background: white;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    max-width: 400px;
-    margin: auto;
-}
-
-input {
-    padding: 10px;
-    width: 80%;
-    margin-bottom: 10px;
-}
-
-button {
-    padding: 10px 15px;
-    background-color: #007BFF;
-    color: white;
+    background-image: url("https://unsplash.com/photos/above-cloud-photo-of-blue-skies-yQorCngxzwI");
+  }
+  
+  /* navigation section */
+  .navigation {
+    height: 20vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 40px;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+  
+  .logo-name {
+    color: green;
+    font-size: 25px;
+  }
+  
+  nav ul li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 20px;
+  }
+  
+  nav ul li a {
+    color: #222;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  nav ul li a:hover {
+    color: brown;
+    transition: 0.3s;
+  }
+  
+  button {
     border: none;
+    background: green;
+    padding: 12px 30px;
+    border-radius: 30px;
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    transition: 0.4s;
+  }
+  
+  button:hover {
+    transform: scale(1.1);
     cursor: pointer;
-}
+  }
+  
+  nav input {
+    width: 100%;
+    max-width: 280px;
+    padding: 10px 15px;
+    border: none;
+    outline: none;
+    border-radius: 16px;
+    font-size: 20px;
+    font-weight: 300;
+    transition: 0.2s ease-out;
+    color: #f50505;
+  }
+  
+  
+  
+  .form-container {
+    margin: auto;
+    width: 500px;
+    max-width: 90%;
+  }
+  
+  .form-container form {
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    background: white;
+    border-radius: 4px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  }
+  
+  .form-container form h2 {
+    text-align: center;
+    margin-bottom: 24px;
+    color: #222;
+  }
+  
+  .form-container form .form-control {
+    width: 100%;
+    height: 40px;
+    background: white;
+    border-radius: 4px;
+    border: 1px solid silver;
+    margin: 10px 0 18px 0;
+    padding: 0 10px;
+  }
+  
+  .form-container form .btn {
+    margin-left: 50%;
+    transform: translate(-50%);
+    width: 120px;
+    height: 34px;
+    border: none;
+    outline: none;
+    background: #27a327;
+    cursor: pointer;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: white;
+    border-radius: 4px;
+    transition: 0.3s;
+  }
+  
+  .form-container form .btn:hover {
+    opacity: 0.7;
+  }
+  
+  /* weather app section */
+  .weather-wrap {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-image: url("assets/photo-1513002749550-c59d786b8e6c.avif");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+  header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 15px 15px;
+  }
+  
+  header input {
+    width: 100%;
+    max-width: 280px;
+    padding: 10px 15px;
+    border: none;
+    outline: none;
+    /* background-color: white; */
+    border-radius: 16px;
+    border-bottom: 3px solid #00df25;
+    font-size: 20px;
+    font-weight: 300;
+    transition: 0.2s ease-out;
+    color: #fa0526;
+  }
+  
+  header input:focus {
+    background-color: #cecece;
+  }
+  
+  main {
+    flex: 1 1 100%;
+    padding: 25px 25px 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .location .city {
+    color: #222;
+    font-size: 32px;
+    font-weight: 500;
+    margin-bottom: 5px;
+  }
+  
+  .location .date {
+    color: #222;
+    font-size: 16px;
+  }
+  
+  .current .temp {
+    color: #222;
+    font-size: 102px;
+    font-weight: 900;
+    margin: 30px 0;
+    text-shadow: 2px 8px rgba(86, 223, 22, 0.5);
+  }
+  
+  .current .temp span {
+    font-weight: 200;
+  }
+  
+  .current .weather {
+    color: #222;
+    font-size: 32px;
+    font-weight: 700;
+    font-style: italic;
+    margin-bottom: 15px;
+    text-shadow: 0 3px rgba(17, 206, 26, 0.4);
+  }
+  
+  .current .hi-low {
+    color: #222;
+    font-size: 24px;
+    font-weight: 500;
+    text-shadow: 0 3px rgba(16, 230, 9, 0.4);
+  }
+  
+  /* feedback section */
+  .feedback {
+    height: 18vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-color: rgb(28, 5, 240);
+  }
+  
+  .rate-btn:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+  }
+  
+  .rate-btn {
+    border: none;
+    padding: 12px 30px;
+    border-radius: 30px;
+    font-weight: bold;
+    font-size: 15px;
+    transition: 0.4s;
+    display: inline-block;
+    
+  
+  }
+  
+  .rate-one {
+    background: #379237;
+  }
+  
+  .rate-two {
+    background: #54B435;
+  }
+  
+  .rate-three {
+    background: #82CD47;
+  }
+  
+  .rate-four {
+    background: #F0FF42;
+  }
+  
+  .rate-five {
+    background: #ffd342;
+  }
+  
+  .feedback-container form h2 {
+    text-align: center;
+    margin-bottom: 4px;
+    color: #207cf5;
+    
+  }
+  .feedback-container form {
+    justify-content: center;
+  }
+  
+  #feedback {
+    display: block;
+    text-align: center;
+  }
+  .feedback{
+    display: flex;
+    justify-content: center;
+  }
+  .feedback input{
+    height: 50px;
+    margin: 20px 10px 0 0;
+  }
 
-button:hover {
-    background-color: #0056b3;
-}
-
-#weatherResult {
-    margin-top: 20px;
-    font-size: 18px;
+.logo {
+  width: 50px; /* Adjust size as needed */
+  height: auto;
+  margin-right: 10px;
+  vertical-align: middle;
+  border-radius: 50%; /* Optional: make the logo circular */
 }
