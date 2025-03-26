@@ -28,14 +28,34 @@ Weather App is a web-based application that allows users to search for weather i
     d. OpenWeather API-provides real-time weather data such as temperature, humidity, wind speed and weather conditions
     Uses HTTP requests to fetch data in JSON format.
 
+## Installation ##
 
-## Project Setup Instructions
+1. Clone the repository:
 
-To get started with the Weather App, follow these steps:
+   ```bash
+   git clone 
+## How to use the weather App
+Open the App
+search for a city 
+view weather details
 
-### 1. Clone the repository:
-```bash
-git clone https://github.com/Edwin-kipyego/weather-tracker
+## Upcoming Features
+*login and save locations
+*feedback section
+*unit Toggle
+
+## acknowledgement
+i would like to express my gratitude to the following for their contribution and support for making this weather tracker App posible.
+  **Openweather API 
+  **github &Git
+  MoringaSchool
+  Friends and Mentors
+
+  ## Feedback &Support
+  your feedback is valuable in improving the weather API, If you have any suggestions, feature requests or any issues feel free to share them
+   Github link:https://github.com/Edwin-kipyego
+   email: koriredwin95@gmail.com
+  
 
 
 
@@ -43,8 +63,5 @@ git clone https://github.com/Edwin-kipyego/weather-tracker
 
 
 
-Contact Information
-For any questions or feedback, feel free to reach out to me at:
 
 
-GitHub: https://github.com/Edwin-kipyego
