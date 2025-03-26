@@ -95,3 +95,18 @@ function createDate(dateValue) {
 
   return `${day} ${date} ${month} ${year}`;
 }
+// handle fedback form submission
+document.querySelector(".submit-feedback").addEventListener("click", (e) => {
+  e.preventDefault(); // Prevent the form from refreshing the page
+
+  // Get the selected feedback option
+  const selectedFeedback = document.querySelector('input[name="feedback"]:checked');
+
+  if (selectedFeedback) {
+    // Display the selected feedback (you can replace this with any action, like sending it to a server)
+    alert(`Thank you for your feedback: ${selectedFeedback.value}`);
+  } else {
+    // Alert the user if no option is selected
+    alert("Please select a feedback option before submitting.");
+  }
+});
