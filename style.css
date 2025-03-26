@@ -127,18 +127,18 @@ body {
 .weather-wrap {
   display: flex;
   flex-direction: column;
-  justify-content: center; /* Center vertically */
-  align-items: center; /* Center horizontally */
-  min-height: 70vh; /* Reduced height */
-  max-width: 600px; /* Reduced width */
-  margin: 0 auto; /* Center horizontally within the page */
-  padding: 20px; /* Add some padding for spacing */
+  justify-content: center; 
+  align-items: center; 
+  min-height: 70vh; 
+  max-width: 600px; 
+  margin: 0 auto; 
+  padding: 20px; 
   background-image: url("Assets/taylor-van-riper-yQorCngxzwI-unsplash.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  border-radius: 10px; /* Optional: Add rounded corners */
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Optional: Add a shadow for better visibility */
+  border-radius: 10px; 
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
 }
   
   header {
@@ -216,11 +216,11 @@ body {
     text-shadow: 0 3px rgba(16, 230, 9, 0.4);
   }
 .logo {
-  width: 50px; /* Adjust size as needed */
+  width: 50px; 
   height: auto;
   margin-right: 10px;
   vertical-align: middle;
-  border-radius: 50%; /* Optional: make the logo circular */
+  border-radius: 50%; 
 }
 .video-container {
   position: fixed;
