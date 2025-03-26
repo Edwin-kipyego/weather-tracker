@@ -66,11 +66,27 @@
       <div id="feedback" class="feedback-container">
         <h2>Comment Here</h2>
         <form action="feedback" class="feedback">
-          <input type="button" class="rate-btn rate-one" value="Excellent" />
-          <input type="button" class="rate-btn rate-two" value="satisfactory" />
-          <input type="button" class="rate-btn rate-three" value="Good" />
-          <input type="button" class="rate-btn rate-four" value="Needs improvement " />
-          <input type="button" class="rate-btn rate-five" value="poor" />
+          <label>
+            <input type="radio" name="feedback" value="Excellent" />
+            Excellent
+          </label>
+          <label>
+            <input type="radio" name="feedback" value="Satisfactory" />
+            Satisfactory
+          </label>
+          <label>
+            <input type="radio" name="feedback" value="Good" />
+            Good
+          </label>
+          <label>
+            <input type="radio" name="feedback" value="Needs Improvement" />
+            Needs Improvement
+          </label>
+          <label>
+            <input type="radio" name="feedback" value="Poor" />
+            Poor
+          </label>
+          <button type="submit" class="submit-feedback">Submit</button>
         </form>
       </div>
     </section>
