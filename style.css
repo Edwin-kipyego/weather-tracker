@@ -124,15 +124,22 @@ body {
   }
   
   /* weather app section */
-  .weather-wrap {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-max-width: 800px;
-    background-image: url("Assets/taylor-van-riper-yQorCngxzwI-unsplash.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-  }
+.weather-wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center vertically */
+  align-items: center; /* Center horizontally */
+  min-height: 70vh; /* Reduced height */
+  max-width: 600px; /* Reduced width */
+  margin: 0 auto; /* Center horizontally within the page */
+  padding: 20px; /* Add some padding for spacing */
+  background-image: url("Assets/taylor-van-riper-yQorCngxzwI-unsplash.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 10px; /* Optional: Add rounded corners */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Optional: Add a shadow for better visibility */
+}
   
   header {
     display: flex;
@@ -208,76 +215,6 @@ max-width: 800px;
     font-weight: 500;
     text-shadow: 0 3px rgba(16, 230, 9, 0.4);
   }
-  
-  /* feedback section */
-  .feedback {
-    height: 10vh;
-    width: 100%;
-    background-size: cover;
-    background-position: center;
-    background-color: rgb(28, 5, 240);
-  }
-  
-  .rate-btn:hover {
-    transform: scale(1.1);
-    cursor: pointer;
-  }
-  
-  .rate-btn {
-    border: none;
-    padding: 12px 30px;
-    border-radius: 30px;
-    font-weight: bold;
-    font-size: 15px;
-    transition: 0.4s;
-    display: inline-block;
-    
-  
-  }
-  
-  .rate-one {
-    background: #379237;
-  }
-  
-  .rate-two {
-    background: #54B435;
-  }
-  
-  .rate-three {
-    background: #82CD47;
-  }
-  
-  .rate-four {
-    background: #F0FF42;
-  }
-  
-  .rate-five {
-    background: #ffd342;
-  }
-  
-  .feedback-container form h2 {
-    text-align: center;
-    margin-bottom: 4px;
-    color: #207cf5;
-    
-  }
-  .feedback-container form {
-    justify-content: center;
-  }
-  
-  #feedback {
-    display: block;
-    text-align: center;
-  }
-  .feedback{
-    display: flex;
-    justify-content: center;
-  }
-  .feedback input{
-    height: 50px;
-    margin: 20px 10px 0 0;
-  }
-
 .logo {
   width: 50px; /* Adjust size as needed */
   height: auto;
