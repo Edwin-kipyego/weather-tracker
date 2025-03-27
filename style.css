@@ -101,13 +101,13 @@ align-items: center;
   padding: 0 20px;
   display: flex;
 }
-.weathjer-details .humidity,
+.weather-details .humidity,
 .weather-details .wind {
   display: flex;
   align-items: center;
-  width: 50%;
+  width: 100%;
 }
-.weathjer-details .humidity {
+.weather-details .humidity {
  padding: 20px;
  justify-content: flex-start;
 }
