@@ -1,5 +1,48 @@
+const container = document.querySelector(".container");
+const search = document.querySelector(".search-box button");
+const weatherBox = document.querySelector(".weather-box");
+const weatherDetails = document.querySelector(".weather-details");
+
+search.addEventListener("click", () => {
+  
+  const apiKey = 'b0bb3927d34f26388fe842cef7df4e74';
+const city = document.querySelector(".search-box input").value;
+
+if (city == '')
+  return;
+ 
+fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}`)
+
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // fetching the weather data
-let apiKey = "b0bb3927d34f26388fe842cef7df4e74";
+
 
 const searchboxOne = document.querySelector("#searchCityOne");
 const searchboxTwo = document.querySelector("#searchCityTwo");
