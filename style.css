@@ -75,6 +75,7 @@ align-items: center;
   width: 60%;
 }
 
+
 .weather-box .temperture {
   position: relative;
   font-size: 64px;
@@ -132,7 +133,9 @@ align-items: center;
   font-size: 14px;
   font-weight: 500px;
 }
-
+.weatherEmoji{
+  font-size: 100px;
+}
 
 
 
