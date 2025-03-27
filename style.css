@@ -85,7 +85,11 @@ align-items: center;
   position: absolute;
   font-size: 24px;
  margin-left: 4px;
-  bottom: 10px;
+}
+.weather-box .description {
+  font-size: 22px;
+  font-weight: 500;
+  text-transform: capitalize;
 }
 
 
