@@ -9,13 +9,15 @@ display: flex;
 justify-content: center;
 align-items: center;
 min-height: 100vh;
-background: seagreen;
+background: blueviolet;
 }
 .container {
 position: relative;
 width: 400px;
 height: 550px;
-background: purple;
+background: rgba(255, 255, 255, .1);
+backdrop-filter: blur(30px);
+border: 2px solid rgba(255, 255, 255, .2);
 border-radius: 16px;
 padding: 20px;
 color: #fff;
@@ -91,269 +93,70 @@ align-items: center;
   font-weight: 500;
   text-transform: capitalize;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-body {
-    background-color: #00df25;
-  }
-  
-  /* navigation section */
-  .navigation {
-    height: 20vh;
-    width: 100%;
-    background-size: cover;
-    background-position: center;
-  }
-  
-  nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding-top: 40px;
-    padding-left: 10%;
-    padding-right: 10%;
-  }
-  
-  .logo-name {
-    color: green;
-    font-size: 25px;
-  }
-  
-  nav ul li {
-    list-style-type: none;
-    display: inline-block;
-    padding: 10px 20px;
-  }
-  
-  nav ul li a {
-    color: #222;
-    text-decoration: none;
-    font-weight: bold;
-  }
-  
-  nav ul li a:hover {
-    color: brown;
-    transition: 0.3s;
-  }
-  
-  button {
-    border: none;
-    background: green;
-    padding: 12px 30px;
-    border-radius: 30px;
-    color: white;
-    font-weight: bold;
-    font-size: 15px;
-    transition: 0.4s;
-  }
-  
-  button:hover {
-    transform: scale(1.1);
-    cursor: pointer;
-  }
-  
-  nav input {
-    width: 100%;
-    max-width: 280px;
-    padding: 10px 15px;
-    border: none;
-    outline: none;
-    border-radius: 16px;
-    font-size: 20px;
-    font-weight: 300;
-    transition: 0.2s ease-out;
-    color: #f50505;
-  }
-  
-  
-  
-  .form-container {
-    margin: auto;
-    width: 500px;
-    max-width: 90%;
-  }
-  
-  .form-container form {
-    width: 100%;
-    height: 100%;
-    padding: 20px;
-    background: white;
-    border-radius: 4px;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
-  }
-  
-  .form-container form h2 {
-    text-align: center;
-    margin-bottom: 24px;
-    color: #222;
-  }
-  
-  .form-container form .form-control {
-    width: 100%;
-    height: 40px;
-    background: white;
-    border-radius: 4px;
-    border: 1px solid silver;
-    margin: 10px 0 18px 0;
-    padding: 0 10px;
-  }
-  
-  .form-container form .btn {
-    margin-left: 50%;
-    transform: translate(-50%);
-    width: 120px;
-    height: 34px;
-    border: none;
-    outline: none;
-    background: #27a327;
-    cursor: pointer;
-    font-size: 16px;
-    text-transform: uppercase;
-    color: white;
-    border-radius: 4px;
-    transition: 0.3s;
-  }
-  
-  .form-container form .btn:hover {
-    opacity: 0.7;
-  }
-  
-  /* weather app section */
-.weather-wrap {
-  display: flex;
-  flex-direction: column;
-  justify-content: center; 
-  align-items: center; 
-  min-height: 70vh; 
-  max-width: 600px; 
-  margin: 0 auto; 
-  padding: 20px; 
-  background-image: url("Assets/taylor-van-riper-yQorCngxzwI-unsplash.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  border-radius: 10px; 
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
-}
-  
-  header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 50px 15px 15px;
-  }
-  
-  header input {
-    width: 100%;
-    max-width: 280px;
-    padding: 10px 15px;
-    border: none;
-    outline: none;
-    /* background-color: white; */
-    border-radius: 16px;
-    border-bottom: 3px solid #00df25;
-    font-size: 20px;
-    font-weight: 300;
-    transition: 0.2s ease-out;
-    color: #fa0526;
-  }
-  
-  header input:focus {
-    background-color: #cecece;
-  }
-  
-  main {
-    flex: 1 1 100%;
-    padding: 25px 25px 50px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-  
-  .location .city {
-    color: #222;
-    font-size: 32px;
-    font-weight: 500;
-    margin-bottom: 5px;
-  }
-  
-  .location .date {
-    color: #222;
-    font-size: 16px;
-  }
-  
-  .current .temp {
-    color: #222;
-    font-size: 102px;
-    font-weight: 900;
-    margin: 30px 0;
-    text-shadow: 2px 8px rgba(86, 223, 22, 0.5);
-  }
-  
-  .current .temp span {
-    font-weight: 200;
-  }
-  
-  .current .weather {
-    color: #222;
-    font-size: 32px;
-    font-weight: 700;
-    font-style: italic;
-    margin-bottom: 15px;
-    text-shadow: 0 3px rgba(17, 206, 26, 0.4);
-  }
-  
-  .current .hi-low {
-    color: #222;
-    font-size: 24px;
-    font-weight: 500;
-    text-shadow: 0 3px rgba(16, 230, 9, 0.4);
-  }
-.logo {
-  width: 50px; 
-  height: auto;
-  margin-right: 10px;
-  vertical-align: middle;
-  border-radius: 50%; 
-}
-.video-container {
-  position: fixed;
-  top: 0;
+.weather-details {
+  position: absolute;
+  bottom: 40px;
   left: 0;
   width: 100%;
-  height: 100%;
-  overflow: hidden;
-  z-index: -1;
+  padding: 0 20px;
+  display: flex;
 }
-.video-container video {
-  min-width: 100%;
-  height: 100%;
-  object-fit: cover;
+.weathjer-details .humidity,
+.weather-details .wind {
+  display: flex;
+  align-items: center;
+  width: 50%;
 }
+.weathjer-details .humidity {
+ padding: 20px;
+ justify-content: flex-start;
+}
+.weather-details .wind {
+  padding-right: 20px;
+  justify-content: flex-end;
+}
+
+
+
+.weather-details i {
+  font-size: 56px;
+  margin-right: 10px;
+
+}
+.weather-details span {
+  display: inline-block;
+  font-size: 22px;
+  font-weight: 500;
+}
+.weather-details p{
+  font-size: 14px;
+  font-weight: 500px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
