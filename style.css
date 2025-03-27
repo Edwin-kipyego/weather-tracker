@@ -21,6 +21,7 @@ border: 2px solid rgba(255, 255, 255, .2);
 border-radius: 16px;
 padding: 20px;
 color: #fff;
+transition: height 0.5s ease;
 }
 
 .search-box {
@@ -71,6 +72,8 @@ align-items: center;
   text-align: center;
   margin: 40px 0;
 }
+
+
 .weather-box img {
   width: 60%;
 }
@@ -107,7 +110,15 @@ align-items: center;
   display: flex;
   align-items: center;
   width: 100%;
+  transform: translateY(-100%);
 }
+.weather-details.active .humidity,
+.weather-details.active .wind {
+  transform: translateY(0);
+  transition: transform 1s ease;
+  transition-delay: 1.2s;
+}
+
 .weather-details .humidity {
  padding: 20px;
  justify-content: flex-start;
@@ -137,6 +148,22 @@ align-items: center;
   font-size: 100px;
 }
 
+.not-found {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  margin-top: 100px;
+}
+.not-found img {
+  width: 65%;
+}
+.not-found p {
+  font-size: 22px;
+  font-weight: 500;
+  margin-top: 12px;
+}
 
 
 
