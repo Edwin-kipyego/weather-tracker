@@ -21,7 +21,7 @@ search.addEventListener("click", () => {
       const humidity = document.querySelector('.weather-details .humidity span');
       const wind = document.querySelector('.weather-details .wind span');
       const weatherEmoji = document.querySelector('.weather-box .weatherEmoji'); // Target the emoji element
-
+      const dateElement = document.querySelector('.weather-box .date'); 
       function displayEmoji(weatherId) {
         switch (true) {
           case weatherId < 300:
@@ -42,20 +42,6 @@ search.addEventListener("click", () => {
             return "🤷‍♂️"; // Unknown weather
         }
       }
-
-      // Update the DOM with weather data
-      temperature.innerHTML = `${Math.round(json.main.temp - 273.15)}<span>°C</span>`;
-      description.innerHTML = json.weather[0].description;
-      humidity.innerHTML = `${json.main.humidity}<span>%</span>`;
-      wind.innerHTML = `${Math.round(json.wind.speed)}<span>km/h</span>`;
-
-      // Update the emoji in the DOM
-      const weatherId = json.weather[0].id;
-      const emoji = displayEmoji(weatherId);
-      weatherEmoji.innerHTML = emoji; // Update the emoji element in the DOM
-
-      console.log(`Weather Emoji: ${emoji}`);
-
       function createDate(dateValue) {
         let days = [
           "Sunday",
@@ -87,12 +73,54 @@ search.addEventListener("click", () => {
         let month = months[dateValue.getMonth()];
         let year = dateValue.getFullYear();
 
-        return `${day} ${date} ${month} ${year}`;
+        return `${day}, ${date} ${month} ${year}`;
       }
 
-      // Example usage of createDate
-      let today = new Date();
-      console.log(createDate(today)); // Logs the formatted date
-    })
-    .catch(error => console.error('Error fetching weather data:', error));
+
+     // Update the DOM with weather data
+     temperature.innerHTML = `${Math.round(json.main.temp - 273.15)}<span>°C</span>`;
+     description.innerHTML = json.weather[0].description;
+     humidity.innerHTML = `${json.main.humidity}<span>%</span>`;
+     wind.innerHTML = `${Math.round(json.wind.speed)}<span>km/h</span>`;
+
+     // Update the emoji in the DOM
+     const weatherId = json.weather[0].id;
+     const emoji = displayEmoji(weatherId);
+     weatherEmoji.innerHTML = emoji; // Update the emoji element in the DOM
+
+     // Update the date in the DOM
+     let today = new Date();
+     dateElement.innerHTML = createDate(today); // Display the formatted date in the DOM
+
+     console.log(`Weather Emoji: ${emoji}`);
+     console.log(createDate(today)); // Logs the formatted date
+   })
+   .catch(error => console.error('Error fetching weather data:', error));
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      
