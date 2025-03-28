@@ -33,7 +33,7 @@ Weather App is a web-based application that allows users to search for weather i
 1. Clone the repository:
 
    ```bash
-   git clone 
+   git clone https://github.com/Edwin-kipyego/weather-tracker/commits/main/
 ## How to use the weather App
 Open the App
 search for a city 
